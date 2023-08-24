@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="home_blue">#2E3A74</color>
+    <color name="home_blue_">#4A5BBB</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="blue_forget_password">#00B0FF</color>
+</resources>

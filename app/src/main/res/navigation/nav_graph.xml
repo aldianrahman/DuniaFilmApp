@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.duniafilmapp.splashscreen.presentation.SplashScreenFragment"
+        android:label="SplashScreenFragment" >
+        <action
+            android:id="@+id/splashScreenFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.duniafilmapp.home.presentation.HomeFragment"
+        android:label="SplashScreenFragment" >
+        <action
+            android:id="@+id/homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            >
+<!--            <argument-->
+<!--                android:name="data"-->
+<!--                app:argType="string"-->
+<!--                android:defaultValue="Masuk"-->
+<!--                />-->
+        </action>
+
+        <action
+            android:id="@+id/homeFragment_to_signupFragment"
+            app:destination="@id/loginFragment"
+            >
+<!--            <argument-->
+<!--                android:name="data"-->
+<!--                app:argType="string"-->
+<!--                android:defaultValue="Daftar"-->
+<!--                />-->
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.duniafilmapp.login.presentation.LoginFragment"
+        android:label="SplashScreenFragment" >
+        <argument
+            android:name="myAge"
+            app:argType="string"
+            android:defaultValue="error" />
+    </fragment>
+
+
+
+
+</navigation>
